@@ -53,13 +53,13 @@ body {
 .search-bar button {
     position: absolute;
     width: 15%;
-    height: 90%;
+    height: 70%;
     right: 2px;
     top: 2px;
     border: none;
     color: #8D6E6E;
     cursor: pointer;
-    background-color: #fff;
+    background-color: #f9f9f9;
     border-radius: 5px 0 0 5px;
 }
 
@@ -672,4 +672,198 @@ ul li a:hover {
 
 .related-products .favorite-icon:hover {
     color: red;
+}
+
+/*Phần infoUser*/
+.user-menu{
+    font-weight: bold;
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-info{
+    margin-top: 20px;
+}
+
+.info-block {
+    margin-bottom: 20px;
+}
+
+.info-block h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+/* Định dạng cho form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tiêu đề thông tin người dùng */
+.user-info h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Định dạng cho form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tạo khoảng cách cho các trường nhập liệu */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Nhãn của các trường */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Định dạng cho các input */
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    margin-bottom: 10px;
+}
+
+input:disabled {
+    background-color: #e0e0e0;
+}
+
+/* Định dạng cho các nút */
+.ubtn {
+    padding: 10px 20px;
+    border: 1px solid #8D6E6E;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.ubtn:hover {
+    background-color: #8D6E6E;
+}
+
+/* Nút Lưu ban đầu ẩn */
+#save-btn {
+    display: none;
+}
+
+/* Phần productPost */
+
+.productPost-img {
+    display: flex;
+    justify-content: center; /* Căn giữa ngang */
+    align-items: center;    /* Căn giữa dọc */
+    margin: 20px 0;
+}
+
+.productPost-img img {
+    max-width: 100%;
+    height: 600px;
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng tiêu đề */
+.productPost-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* Danh sách chi tiết sản phẩm */
+.productPost-details {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+.productPost-details li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.productPost-details li::before {
+    content: '\2022';
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Công dụng và ý nghĩa */
+.productPost-usage, .productPost-meaning, .productPost-additional {
+    margin-top: 20px;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.productPost-usage h2, .productPost-meaning h2, .productPost-additional h2 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.productPost-usage p, .productPost-meaning p, .productPost-additional p {
+    margin: 5px 0;
+    line-height: 1.8;
+    
+}
+
+.productPost-usage p, .productPost-meaning p {
+    margin: 5px 0;
+    line-height: 1.8;
+}
+.related-posts{
+    margin: 50px;
+    position: fixed;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1000; /
+}
+.related-posts li a {
+    padding: 10px;
+}
+/* Căn giữa toàn bộ nội dung */
+.productPost {
+    margin: 30px auto;
+    padding: 20px;
+    width: 100%;  /* Đảm bảo phần tử chiếm toàn bộ chiều rộng */
+    max-width: 800px; /* Hoặc điều chỉnh max-width cho phù hợp */
+}
+.check-item {
+    position: relative;
+    padding-left: 30px; /* Tạo khoảng cách để biểu tượng check không bị che mất nội dung */
+}
+
+.check-item::before {
+    content: "\2713"; /* Mã Unicode cho dấu check */
+    font-size: 20px; /* Kích thước biểu tượng */
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0; /* Đặt biểu tượng ở vị trí đầu dòng */
 }
